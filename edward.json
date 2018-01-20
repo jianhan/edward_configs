@@ -1,0 +1,16 @@
+{
+    "imports": [],
+    "groups": [],
+    "services": [
+        {
+            "name": "gorillaweb",
+            "path": "/home/jian/go/src/github.com/jianhan/gorillaweb/src",
+            "commands": {
+                "build": "go build -o gorillaweb",
+                "launch": "gorillaweb"
+            },
+            "env": [],
+            "watch": {}
+        }
+    ]
+}
