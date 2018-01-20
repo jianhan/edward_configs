@@ -1,8 +1,10 @@
 {
     "imports": [],
     "groups": [
-	"name": "servers",
-	"children": ["consul", "nats"]
+	{
+		"name": "servers",
+		"children": ["consul","nats"]
+	}
     ],
     "services": [
         {
