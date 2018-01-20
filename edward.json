@@ -9,7 +9,7 @@
                 "launch": "consul agent -dev"
             }
         },
-	{
+	    {
             "name": "nats",
             "path": "/home/jian/go/bin",
             "commands": {
@@ -18,10 +18,10 @@
         },
         {
             "name": "gorillaweb",
-            "path": "/home/jian/go/src/github.com/jianhan/gorillaweb/src",
+            "path": "/home/jian/go/src/github.com/jianhan/gorillaweb/api",
             "commands": {
-                "build": "go build -o gorillaweb",
-                "launch": "gorillaweb"
+                "build": "go build -o ../bin/gorillaweb",
+                "launch": "../bin/gorillaweb"
             },
             "env": [],
             "watch": {}
