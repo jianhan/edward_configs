@@ -3,6 +3,20 @@
     "groups": [],
     "services": [
         {
+            "name": "consul",
+            "path": "/home/jian/.local/bin",
+            "commands": {
+                "launch": "consul agent -dev"
+            }
+        },
+	{
+            "name": "nats",
+            "path": "/home/jian/go/bin",
+            "commands": {
+                "launch": "gnatsd"
+            }
+        },
+        {
             "name": "gorillaweb",
             "path": "/home/jian/go/src/github.com/jianhan/gorillaweb/src",
             "commands": {
