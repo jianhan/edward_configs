@@ -1,6 +1,9 @@
 {
     "imports": [],
-    "groups": [],
+    "groups": [
+	"name": "servers",
+	"children": ["consul", "nats"]
+    ],
     "services": [
         {
             "name": "consul",
@@ -9,11 +12,16 @@
                 "launch": "consul agent -dev"
             }
         },
-	    {
+	{
             "name": "nats",
-            "path": "/home/jian/go/bin",
             "commands": {
                 "launch": "gnatsd"
+            }
+        },
+	{
+            "name": "nats-streaming",
+            "commands": {
+                "launch": "nats-streaming-server"
             }
         },
         {
