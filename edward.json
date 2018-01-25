@@ -9,7 +9,7 @@
     "services": [
         {
             "name": "consul",
-            "path": "/home/jian/.local/bin",
+            "path": "/usr/local/bin",
             "commands": {
                 "launch": "consul agent -dev"
             }
@@ -32,6 +32,16 @@
             "commands": {
                 "build": "go build -o ../bin/gorillaweb",
                 "launch": "../bin/gorillaweb"
+            },
+            "env": [],
+            "watch": {}
+        },
+	{
+            "name": "course-management-service",
+            "path": "/home/jian/go/src/github.com/jianhan/course-management-service",
+            "commands": {
+                "build": "go build -o ./bin/course-management-service",
+                "launch": "../bin/course-management-service"
             },
             "env": [],
             "watch": {}
