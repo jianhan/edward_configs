@@ -41,7 +41,7 @@
             "path": "/home/jian/go/src/github.com/jianhan/course-management-service",
             "commands": {
                 "build": "go build -o ./bin/course-management-service",
-                "launch": "../bin/course-management-service"
+                "launch": "./bin/course-management-service"
             },
             "env": [],
             "watch": {}
