@@ -50,8 +50,8 @@
       "name": "course-management-service",
       "path": "/home/jian/go/src/github.com/jianhan/course-management-service",
       "commands": {
-        "build": "go build -o ./bin/course-management-service",
-        "launch": "./bin/course-management-service"
+        "build": "make build",
+        "launch": "make run"
       },
       "env": [
         "ENV=development"
